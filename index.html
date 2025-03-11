@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Estoque e Caixa</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="estoque.js">
+</head>
+<body>
+  <div class="container">
+    <h1>Controle de Estoque e Caixa</h1>
+    <div class="form">
+      <label for="produto">Produto:</label>
+      <input type="text" id="produto" placeholder="Nome do Produto">
+      <label for="quantidade">Quantidade:</label>
+      <input type="number" id="quantidade" placeholder="Quantidade">
+      <label for="preco">Preço por Unidade:</label>
+      <input type="number" id="preco" placeholder="Preço">
+      <button onclick="adicionarProduto()">Adicionar Produto</button>
+      <button onclick="registrarVenda()">Registrar Venda</button>
+    </div>
+    <div class="output">
+      <h2>Estoque Atual</h2>
+      <ul id="estoque-lista"></ul>
+      <h2>Caixa</h2>
+      <p>Total no Caixa: R$ <span id="caixa-total">0.00</span></p>
+    </div>
+  </div>
+  <script src="estoque.js"></script>
+</body>
+</html>
+
+
+
+<!--<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Controle de Estoque</h1>
+    <div class="form-container">
+        <input type="text" id="nomeProduto" placeholder="Nome do Produto">
+        <input type="number" id="quantidadeProduto" placeholder="Quantidade">
+        <button onclick="adicionarProduto()">Adicionar Produto</button>
+    </div>
+    <div class="form-container">
+        <input type="text" id="nomeProduto" placeholder="Nome do Produto">
+        <input type="number" id="quantidadeProduto" placeholder="Quantidade">
+        <button onclick="adicionarProduto()">Adicionar Produto</button>
+    </div>
+    
+    <div class="form-container">
+        <input type="text" id="buscaProduto" placeholder="Buscar Produto" oninput="buscarProduto()">
+    </div>
+    <div id="alerta"></div>
+    <h2>Estoque Atual</h2>
+    <ul id="listaEstoque"></ul>
+    
+    <div id="alerta"></div>
+    <h2>Estoque Atual</h2>
+    <ul id="listaEstoque"></ul>
+    <script src="script.js"></script>
+</body>
+</html>-->
